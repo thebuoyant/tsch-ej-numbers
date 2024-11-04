@@ -1,6 +1,6 @@
 import { describe, test, expect } from "@jest/globals";
-import JsonDataFromCsv from "./../data/data.json";
-import { euroStringToNumber, stringToNumber } from "../utils/record.util";
+import JsonDataFromCsv from "./../../data/data.json";
+import { euroStringToNumber, stringToNumber } from "../../utils/record.util";
 
 describe("Ensure JSON data", () => {
   const data = JsonDataFromCsv;
