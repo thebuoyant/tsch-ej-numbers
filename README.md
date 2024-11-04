@@ -72,6 +72,7 @@ Returns all records of the available draws. The final draw represents the first 
 - limit
   - optional
   - number of last records
+- return type: TRecord[]
 
 Code:
 
@@ -82,3 +83,21 @@ console.log(getRecords()); // all records
 console.log(getRecords(0)); // all records
 console.log(getRecords(10)); // last 10 records
 ```
+
+<hr/>
+
+### getLastDraw()
+
+Returns the last current record.
+
+- return type: TRecord[]
+
+Code:
+
+```
+import { getLastDraw } from "tsch-ej-numbers";
+
+console.log(getLastDraw());
+```
+
+<hr/>
