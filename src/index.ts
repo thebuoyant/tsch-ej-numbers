@@ -1,3 +1,4 @@
+import { getAllClassOneData } from "./handlers/record-class-one.handler";
 import { getFirstDrawData } from "./handlers/record-first-draw.handler";
 import { getLastDrawData } from "./handlers/record-last-draw.handler";
 import { readJsonData } from "./handlers/record.handler";
@@ -13,4 +14,8 @@ export function getLastDraw(): TRecord {
 
 export function getFirstDraw(): TRecord {
   return getFirstDrawData();
+}
+
+export function getClassOneDraws(): TRecord[] {
+  return getAllClassOneData();
 }
