@@ -90,7 +90,7 @@ console.log(getRecords(10)); // last 10 records
 
 Returns the last current record.
 
-- return type: TRecord[]
+- return type: TRecord
 
 Code:
 
