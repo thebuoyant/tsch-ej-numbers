@@ -12,6 +12,7 @@
     "npm-login": "npm login",
     "npm-publish": "npm publish --access public",
     "test": "jest",
+    "test-coverage": "jest --coverage",
     "link": "sudo npm link",
     "data": "node ./data/processor/data-processor.js"
   },

@@ -3,7 +3,10 @@ import { TJsonRecord } from "../types/json-record.types";
 import { TRecord } from "../types/record.types";
 import { euroStringToNumber, stringToNumber } from "./record.util";
 
-export function handleRecordMapping(jsonData: TJsonRecord[]): TRecord[] {
+export function handleRecordMapping(
+  jsonData: TJsonRecord[],
+  limit = 0
+): TRecord[] {
   return jsonData.map((item: TJsonRecord): TRecord => {
     const winningMumbers = [
       Number(item.nummer1),
