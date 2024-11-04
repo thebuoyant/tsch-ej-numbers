@@ -6,12 +6,15 @@ This is an API for the EuroJackpot draws.
 
 https://en.wikipedia.org/wiki/Eurojackpot
 
+<hr/>
+Last Draw: 01.11.2024
+<hr/>
+
 # Important
 
 ### There is no guarantee that the data collected is correct or that the API methods are correct.
 
-<br/>
-<br/>
+<hr/>
 
 # Installation
 
