@@ -7,4 +7,12 @@ module.exports = {
   moduleNameMapper: {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy", // Um CSS-Module zu mocken
   },
+  coverageThreshold: {
+    global: {
+      statements: 95,
+      branches: 60,
+      lines: 100,
+      functions: 100,
+    },
+  },
 };
