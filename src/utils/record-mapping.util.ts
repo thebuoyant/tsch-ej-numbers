@@ -53,7 +53,7 @@ export function handleRecordMapping(
       quotaCl11: euroStringToNumber(item.quoteKlasse11),
       countCl12: stringToNumber(item.anzahlKlasse12),
       quotaCl12: euroStringToNumber(item.quoteKlasse12),
-      day: item.tag,
+      day: item.tag === "Di" ? "Tu" : "Fr",
     };
   });
 }
