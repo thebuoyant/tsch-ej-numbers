@@ -101,3 +101,19 @@ console.log(getLastDraw());
 ```
 
 <hr/>
+
+### getFirstDraw()
+
+Returns the first record.
+
+- return type: TRecord
+
+Code:
+
+```
+import { getFirstDraw } from "tsch-ej-numbers";
+
+console.log(getFirstDraw());
+```
+
+<hr/>
