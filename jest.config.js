@@ -5,7 +5,7 @@ module.exports = {
   testEnvironment: "node",
   testPathIgnorePatterns: ["/node_modules/", "/dist/"],
   moduleNameMapper: {
-    "\\.(css|less|sass|scss)$": "identity-obj-proxy", // Um CSS-Module zu mocken
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
   },
   coverageThreshold: {
     global: {
