@@ -70,7 +70,7 @@ export type TRecord = {
 
 ### getRecords(limit)
 
-Returns all records of the available draws. The final draw represents the first entry in the listing.
+Returns all records of available draws.
 
 - limit
   - optional
@@ -117,6 +117,22 @@ Code:
 import { getFirstDraw } from "tsch-ej-numbers";
 
 console.log(getFirstDraw());
+```
+
+<hr/>
+
+### getClassOneDraws()
+
+Returns all records with success in class one.
+
+- return type: TRecord[]
+
+Code:
+
+```
+import { getClassOneDraws } from "tsch-ej-numbers";
+
+console.log(getClassOneDraws());
 ```
 
 <hr/>
