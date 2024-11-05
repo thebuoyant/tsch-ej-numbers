@@ -15,4 +15,12 @@ module.exports = {
       functions: 100,
     },
   },
+  collectCoverageFrom: [
+    "!src/index.ts",
+    "!src/__mock__/**/*.*",
+    "!dist/**/*.{js,jsx,ts,tsx}",
+    "!data/**/*.*",
+    "!coverage/**/*.*",
+    "!jest.config.js",
+  ],
 };

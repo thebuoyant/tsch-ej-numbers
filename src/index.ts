@@ -16,6 +16,6 @@ export function getFirstDraw(): TRecord {
   return getFirstDrawData();
 }
 
-export function getClassOneDraws(): TRecord[] {
-  return getAllClassOneData();
+export function getClassOneDraws(limit = 0): TRecord[] {
+  return getAllClassOneData(limit);
 }

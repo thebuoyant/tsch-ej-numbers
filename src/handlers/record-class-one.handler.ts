@@ -1,9 +1,8 @@
+import { getRecords } from "..";
 import { TRecord } from "../types/record.types";
-import { handleRecordMapping } from "../utils/record-mapping.util";
-import JsonDataFromCsv from "./../data/data.json";
 
-export function getAllClassOneData(): TRecord[] {
-  const data = handleRecordMapping(JsonDataFromCsv.reverse());
+export function getAllClassOneData(limit = 0): TRecord[] {
+  const data = getRecords(limit);
 
   const classOneDataFilter = data.filter((item: TRecord) => {
     return item.countCl1 > 0;

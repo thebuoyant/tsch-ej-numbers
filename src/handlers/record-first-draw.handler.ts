@@ -1,9 +1,8 @@
+import { getRecords } from "..";
 import { TRecord } from "../types/record.types";
-import { handleRecordMapping } from "../utils/record-mapping.util";
-import JsonDataFromCsv from "./../data/data.json";
 
 export function getFirstDrawData(): TRecord {
-  const data = handleRecordMapping(JsonDataFromCsv);
+  const data = getRecords().reverse();
 
   return data[0];
 }

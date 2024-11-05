@@ -121,10 +121,13 @@ console.log(getFirstDraw());
 
 <hr/>
 
-### getClassOneDraws()
+### getClassOneDraws(limit)
 
 Returns all records with success in class one.
 
+- limit
+  - optional
+  - number of last records
 - return type: TRecord[]
 
 Code:
@@ -132,7 +135,7 @@ Code:
 ```
 import { getClassOneDraws } from "tsch-ej-numbers";
 
-console.log(getClassOneDraws());
+console.log(getClassOneDraws(100));
 ```
 
 <hr/>
