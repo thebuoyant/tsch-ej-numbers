@@ -68,6 +68,15 @@ export type TRecord = {
 
 # API
 
+| Functions                     | Version |
+| ----------------------------- | ------- |
+| getRecords                    | 1.0.x   |
+| getLastDraw                   | 1.0.x   |
+| [deleteRecord](#deleterecord) | 1.2     |
+| [updateRecord](#updaterecord) | 1.3     |
+
+<hr/>
+
 ### getRecords(limit)
 
 Returns all records of available draws.
