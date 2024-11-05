@@ -1,5 +1,4 @@
 import { describe, test, expect } from "@jest/globals";
-import { getAllClassOneData } from "../../handlers/record-class-one.handler";
 import { getWinningNumbersCount } from "../../handlers/record-winning-numbers-count.handler";
 import { countWinningNumbersKeyValue } from "../../utils/winning-numbers-count.util";
 import { RecordMockDataSet } from "../../__mock__/_record-data.mock";
