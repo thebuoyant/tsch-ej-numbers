@@ -154,7 +154,7 @@ export const RecordMockDataSet = [
     en2: 6,
     stake: 39856408,
     countCl1: 1,
-    quotaCl1: 49685851.5,
+    quotaCl1: 120000000,
     countCl2: 4,
     quotaCl2: 423474.3,
     countCl3: 2,
