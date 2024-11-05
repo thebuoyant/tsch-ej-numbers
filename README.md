@@ -10,8 +10,6 @@ https://en.wikipedia.org/wiki/Eurojackpot
 
 ## Last Draw: 01.11.2024
 
-# Important
-
 ### There is no guarantee that the data collected is correct or that the API methods are correct.
 
 <hr/>
@@ -79,6 +77,8 @@ export type TRecord = {
 | getEuroNumbersCount    | 1.0.x   |
 
 <hr/>
+
+## API-Details
 
 ### getRecords(limit)
 
