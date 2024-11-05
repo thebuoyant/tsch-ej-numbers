@@ -1,9 +1,11 @@
 import { getAllClassOneData } from "./handlers/record-class-one.handler";
+import { getEuroNumbersCount } from "./handlers/record-euro-numbers-count.handler";
 import { getFirstDrawData } from "./handlers/record-first-draw.handler";
 import { getLastDrawData } from "./handlers/record-last-draw.handler";
 import { getMaxJackpot } from "./handlers/record-max-jackpot.handler";
 import { getWinningNumbersCount } from "./handlers/record-winning-numbers-count.handler";
 import { readJsonData } from "./handlers/record.handler";
+import { TEuroNumbersKeyValue } from "./types/euro-numbers-key-value.types";
 import { TRecord } from "./types/record.types";
 import { TWinningNumbersKeyValue } from "./types/winning-numbers-key-value.types";
 
@@ -31,4 +33,8 @@ export function getDrawsWinningNumbersCount(
   limit = 0
 ): TWinningNumbersKeyValue[] {
   return getWinningNumbersCount(limit);
+}
+
+export function getDrawsEuroNumbersCount(limit = 0): TEuroNumbersKeyValue[] {
+  return getEuroNumbersCount(limit);
 }
