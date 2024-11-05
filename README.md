@@ -139,3 +139,22 @@ console.log(getClassOneDraws(100));
 ```
 
 <hr/>
+
+### getMaxJackpotDraws(limit)
+
+Returns all records with success in class one and a quota of 120.000.000,00 €.
+
+- limit
+  - optional
+  - number of last records
+- return type: TRecord[]
+
+Code:
+
+```
+import { getMaxJackpotDraws } from "tsch-ej-numbers";
+
+console.log(getMaxJackpotDraws(100));
+```
+
+<hr/>
