@@ -154,7 +154,30 @@ Code:
 ```
 import { getMaxJackpotDraws } from "tsch-ej-numbers";
 
+console.log(getMaxJackpotDraws());
+console.log(getMaxJackpotDraws(0));
 console.log(getMaxJackpotDraws(100));
+```
+
+<hr/>
+
+### getDrawsWinningNumbersCount(limit)
+
+Returns a key / value array for all winning numbers with according counts.
+
+- limit
+  - optional
+  - number of last records
+- return type: TWinningNumbersKeyValue[]
+
+Code:
+
+```
+import { getDrawsWinningNumbersCount } from "tsch-ej-numbers";
+
+console.log(getDrawsWinningNumbersCount());
+console.log(getDrawsWinningNumbersCount(0));
+console.log(getDrawsWinningNumbersCount(100));
 ```
 
 <hr/>
