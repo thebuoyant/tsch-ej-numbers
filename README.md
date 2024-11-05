@@ -7,8 +7,8 @@ This is an API for the EuroJackpot draws.
 https://en.wikipedia.org/wiki/Eurojackpot
 
 <hr/>
-Last Draw: 01.11.2024
-<hr/>
+
+## Last Draw: 01.11.2024
 
 # Important
 
@@ -68,12 +68,15 @@ export type TRecord = {
 
 # API
 
-| Functions                     | Version |
-| ----------------------------- | ------- |
-| getRecords                    | 1.0.x   |
-| getLastDraw                   | 1.0.x   |
-| [deleteRecord](#deleterecord) | 1.2     |
-| [updateRecord](#updaterecord) | 1.3     |
+| Function               | Version |
+| ---------------------- | ------- |
+| getRecords             | 1.0.x   |
+| getLastDraw            | 1.0.x   |
+| getFirstDraw           | 1.0.x   |
+| getClassOneDraws       | 1.0.x   |
+| getMaxJackpotDraws     | 1.0.x   |
+| getWinningNumbersCount | 1.0.x   |
+| getEuroNumbersCount    | 1.0.x   |
 
 <hr/>
 
