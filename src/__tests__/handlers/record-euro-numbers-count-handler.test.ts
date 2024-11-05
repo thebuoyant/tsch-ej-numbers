@@ -1,11 +1,11 @@
 import { describe, test, expect } from "@jest/globals";
 import { countEuroNumbersKeyValue } from "../../utils/euro-numbers-count.util";
 import { RecordMockDataSet } from "../../__mock__/_record-data.mock";
-import { getEuroNumbersCount } from "../../handlers/record-euro-numbers-count.handler";
+import { handleGetEuroNumbersCount } from "../../handlers/record-euro-numbers-count.handler";
 
 describe("Ensure record euro numbers count", () => {
-  test("Ensure function - getEuroNumbersCount", () => {
-    expect(getEuroNumbersCount().length).toBe(12);
+  test("Ensure function - handleGetEuroNumbersCount", () => {
+    expect(handleGetEuroNumbersCount().length).toBe(12);
   });
 
   test("Ensure function - countEuroNumbersKeyValue", () => {

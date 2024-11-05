@@ -161,9 +161,9 @@ console.log(getMaxJackpotDraws(100));
 
 <hr/>
 
-### getDrawsWinningNumbersCount(limit)
+### getWinningNumbersCount(limit)
 
-Returns a key / value array for all winning numbers with according counts.
+Returns a key / value array for all winning numbers.
 
 - limit
   - optional
@@ -173,11 +173,32 @@ Returns a key / value array for all winning numbers with according counts.
 Code:
 
 ```
-import { getDrawsWinningNumbersCount } from "tsch-ej-numbers";
+import { getWinningNumbersCount } from "tsch-ej-numbers";
 
-console.log(getDrawsWinningNumbersCount());
-console.log(getDrawsWinningNumbersCount(0));
-console.log(getDrawsWinningNumbersCount(100));
+console.log(getWinningNumbersCount());
+console.log(getWinningNumbersCount(0));
+console.log(getWinningNumbersCount(100));
+```
+
+<hr/>
+
+### getEuroNumbersCount(limit)
+
+Returns a key / value array for all euro numbers.
+
+- limit
+  - optional
+  - number of last records
+- return type: TEuroNumbersKeyValue[]
+
+Code:
+
+```
+import { getEuroNumbersCount } from "tsch-ej-numbers";
+
+console.log(getEuroNumbersCount());
+console.log(getEuroNumbersCount(0));
+console.log(getEuroNumbersCount(100));
 ```
 
 <hr/>

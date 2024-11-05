@@ -1,11 +1,11 @@
 import { describe, test, expect } from "@jest/globals";
-import { getWinningNumbersCount } from "../../handlers/record-winning-numbers-count.handler";
+import { handleGetWinningNumbersCount } from "../../handlers/record-winning-numbers-count.handler";
 import { countWinningNumbersKeyValue } from "../../utils/winning-numbers-count.util";
 import { RecordMockDataSet } from "../../__mock__/_record-data.mock";
 
 describe("Ensure record winning numbers count", () => {
-  test("Ensure function - getWinningNumbersCount", () => {
-    expect(getWinningNumbersCount().length).toBe(50);
+  test("Ensure function - handleGetWinningNumbersCount", () => {
+    expect(handleGetWinningNumbersCount().length).toBe(50);
   });
 
   test("Ensure function - countWinningNumbersKeyValue", () => {

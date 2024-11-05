@@ -1,40 +1,38 @@
-import { getAllClassOneData } from "./handlers/record-class-one.handler";
-import { getEuroNumbersCount } from "./handlers/record-euro-numbers-count.handler";
-import { getFirstDrawData } from "./handlers/record-first-draw.handler";
-import { getLastDrawData } from "./handlers/record-last-draw.handler";
-import { getMaxJackpot } from "./handlers/record-max-jackpot.handler";
-import { getWinningNumbersCount } from "./handlers/record-winning-numbers-count.handler";
-import { readJsonData } from "./handlers/record.handler";
+import { handleGetAllClassOneData } from "./handlers/record-class-one.handler";
+import { handleGetEuroNumbersCount } from "./handlers/record-euro-numbers-count.handler";
+import { handleGetFirstDrawData } from "./handlers/record-first-draw.handler";
+import { handleGetLastDrawData } from "./handlers/record-last-draw.handler";
+import { handleGetMaxJackpot } from "./handlers/record-max-jackpot.handler";
+import { handleGetWinningNumbersCount } from "./handlers/record-winning-numbers-count.handler";
+import { handleReadJsonData } from "./handlers/record.handler";
 import { TEuroNumbersKeyValue } from "./types/euro-numbers-key-value.types";
 import { TRecord } from "./types/record.types";
 import { TWinningNumbersKeyValue } from "./types/winning-numbers-key-value.types";
 
 export function getRecords(limit = 0): TRecord[] {
-  return readJsonData(limit);
+  return handleReadJsonData(limit);
 }
 
 export function getLastDraw(): TRecord {
-  return getLastDrawData();
+  return handleGetLastDrawData();
 }
 
 export function getFirstDraw(): TRecord {
-  return getFirstDrawData();
+  return handleGetFirstDrawData();
 }
 
 export function getClassOneDraws(limit = 0): TRecord[] {
-  return getAllClassOneData(limit);
+  return handleGetAllClassOneData(limit);
 }
 
 export function getMaxJackpotDraws(limit = 0): TRecord[] {
-  return getMaxJackpot(limit);
+  return handleGetMaxJackpot(limit);
 }
 
-export function getDrawsWinningNumbersCount(
-  limit = 0
-): TWinningNumbersKeyValue[] {
-  return getWinningNumbersCount(limit);
+export function getWinningNumbersCount(limit = 0): TWinningNumbersKeyValue[] {
+  return handleGetWinningNumbersCount(limit);
 }
 
-export function getDrawsEuroNumbersCount(limit = 0): TEuroNumbersKeyValue[] {
-  return getEuroNumbersCount(limit);
+export function getEuroNumbersCount(limit = 0): TEuroNumbersKeyValue[] {
+  return handleGetEuroNumbersCount(limit);
 }

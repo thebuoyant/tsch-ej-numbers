@@ -1,7 +1,7 @@
 import { getRecords } from "..";
 import { TRecord } from "../types/record.types";
 
-export function getMaxJackpot(limit = 0): TRecord[] {
+export function handleGetMaxJackpot(limit = 0): TRecord[] {
   const data = getRecords(limit);
 
   const maxJackpotDataFilter = data.filter((item: TRecord) => {
