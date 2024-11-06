@@ -75,6 +75,7 @@ export type TRecord = {
 | getMaxJackpotDraws     | 1.0.x   |
 | getWinningNumbersCount | 1.0.x   |
 | getEuroNumbersCount    | 1.0.x   |
+| getDecadesCount        | 1.0.x   |
 
 <hr/>
 
