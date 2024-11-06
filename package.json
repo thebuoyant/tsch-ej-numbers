@@ -1,6 +1,6 @@
 {
   "name": "tsch-ej-numbers",
-  "version": "1.0.20241101",
+  "version": "1.0.20241105",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

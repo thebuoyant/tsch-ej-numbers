@@ -1,6 +1,6 @@
 # tsch-ej-numbers
 
-### Version: 1.0.20241101
+### Version: 1.0.20241105
 
 # Abstract
 
@@ -9,8 +9,6 @@ This is an API for the EuroJackpot draws.
 https://en.wikipedia.org/wiki/Eurojackpot
 
 <hr/>
-
-## Last Draw: 01.11.2024
 
 ### There is no guarantee that the data collected is correct or that the API methods are correct.
 
