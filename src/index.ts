@@ -1,10 +1,12 @@
 import { handleGetAllClassOneData } from "./handlers/record-class-one.handler";
+import { handleGetDecadesCount } from "./handlers/record-decades-count.handler";
 import { handleGetEuroNumbersCount } from "./handlers/record-euro-numbers-count.handler";
 import { handleGetFirstDrawData } from "./handlers/record-first-draw.handler";
 import { handleGetLastDrawData } from "./handlers/record-last-draw.handler";
 import { handleGetMaxJackpot } from "./handlers/record-max-jackpot.handler";
 import { handleGetWinningNumbersCount } from "./handlers/record-winning-numbers-count.handler";
 import { handleReadJsonData } from "./handlers/record.handler";
+import { TDecades } from "./types/decade.types";
 import { TEuroNumbersKeyValue } from "./types/euro-numbers-key-value.types";
 import { TRecord } from "./types/record.types";
 import { TWinningNumbersKeyValue } from "./types/winning-numbers-key-value.types";
@@ -35,4 +37,8 @@ export function getWinningNumbersCount(limit = 0): TWinningNumbersKeyValue[] {
 
 export function getEuroNumbersCount(limit = 0): TEuroNumbersKeyValue[] {
   return handleGetEuroNumbersCount(limit);
+}
+
+export function getDecadesCount(limit = 0): TDecades {
+  return handleGetDecadesCount(limit);
 }
