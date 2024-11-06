@@ -214,3 +214,30 @@ console.log(getEuroNumbersCount(100));
 ```
 
 <hr/>
+
+### getDecadesCount(limit)
+
+Returns an object for decades with according count.
+
+- countDecadeOne (winning numbers 1 - 10)
+- countDecadeTwo (winning numbers 11 - 20)
+- countDecadeThree (winning numbers 21 - 30)
+- countDecadeFour (winning numbers 31 - 40)
+- countDecadeFive (winning numbers 41 - 50)
+
+* limit
+  - optional
+  - number of last records
+* return type: TDecades
+
+Code:
+
+```
+import { getDecadesCount } from "tsch-ej-numbers";
+
+console.log(getDecadesCount());
+console.log(getDecadesCount(0));
+console.log(getDecadesCount(100));
+```
+
+<hr/>
