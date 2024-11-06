@@ -76,6 +76,7 @@ export type TRecord = {
 | getWinningNumbersCount | 1.0.x   |
 | getEuroNumbersCount    | 1.0.x   |
 | getDecadesCount        | 1.0.x   |
+| getLowHighCount        | 1.0.x   |
 
 <hr/>
 
@@ -239,6 +240,30 @@ import { getDecadesCount } from "tsch-ej-numbers";
 console.log(getDecadesCount());
 console.log(getDecadesCount(0));
 console.log(getDecadesCount(100));
+```
+
+<hr/>
+
+### getLowHighCount(limit)
+
+Returns an object for low and high sections with according count.
+
+- countLow (winning numbers 1 - 25)
+- countHigh (winning numbers 26 - 50)
+
+* limit
+  - optional
+  - number of last records
+* return type: TLowHigh
+
+Code:
+
+```
+import { getLowHighCount } from "tsch-ej-numbers";
+
+console.log(getLowHighCount());
+console.log(getLowHighCount(0));
+console.log(getLowHighCount(100));
 ```
 
 <hr/>
